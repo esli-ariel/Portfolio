@@ -10,6 +10,7 @@
     scroll-behavior: smooth;
     border: none;
 }
+
 :root{
     --bg-color:#080808;
     --second-bg-color:#131313;
@@ -502,7 +503,7 @@ footer{
     .navbar{
         position: absolute;
         top: 100%;
-        right: ;
+    
         width: 0;
         padding: 1rem 3%;
         background: var(--bg-color);

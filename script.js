@@ -1,3 +1,4 @@
+/*code pour gerer le menu pour le responsive */ 
 let menuIcon =document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
@@ -23,3 +24,4 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
