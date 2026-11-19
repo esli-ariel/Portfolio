@@ -5,165 +5,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esli Kadio — Master Mobiquité, Big Data &amp; Systèmes</title>
     <meta name="description" content="Portfolio d'Esli Kadio, étudiante en Master 1 Mobiquité, Big Data et Systèmes à l'ESATIC, en double diplomation avec l'Université Côte d'Azur.">
-    <meta property="og:title" content="Esli Kadio — Étudiante en génie logiciel">
+    <meta property="og:title" content="Esli Kadio — Master Mobiquité, Big Data & Systèmes">
     <meta property="og:description" content="Développement web, IA et projets de génie logiciel.">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="icon" href="img/20048676-99036195564_14-s5-v1.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="progress" id="progress" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+    <!-- Navigation flottante -->
     <header class="header" id="header">
-        <a href="#home" class="logo">Esli<span>.</span>Kadio</a>
-        <button class="menu-toggle" id="menu-icon" aria-label="Ouvrir le menu" aria-expanded="false">
-            <i class="bx bx-menu"></i>
-        </button>
-        <nav class="navbar" id="navbar">
-            <a href="#home" class="active">Accueil</a>
-            <a href="#about">À propos</a>
-            <a href="#skills">Compétences</a>
-            <a href="#projects">Projets</a>
-            <a href="#education">Formation</a>
-            <a href="#contact" class="nav-cta">Contact</a>
+        <a href="#home" class="logo">E<span>.</span>K</a>
+        <nav class="navbar" id="navbar" aria-label="Navigation principale">
+            <a href="#home" class="active"><i class="bx bx-home-alt"></i><span>Accueil</span></a>
+            <a href="#about"><i class="bx bx-user"></i><span>À propos</span></a>
+            <a href="#skills"><i class="bx bx-bulb"></i><span>Compétences</span></a>
+            <a href="#projects"><i class="bx bx-folder-open"></i><span>Projets</span></a>
+            <a href="#education"><i class="bx bx-book-open"></i><span>Parcours</span></a>
+            <a href="#contact"><i class="bx bx-envelope"></i><span>Contact</span></a>
         </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème"><i class="bx bx-moon"></i></button>
     </header>
+    <a href="#contact" class="contact-pill">Me contacter</a>
 
     <main>
         <!-- Accueil -->
         <section class="hero" id="home">
-            <div class="container hero-grid">
-                <div class="hero-content reveal">
-                    <span class="eyebrow">Master 1 · Mobiquité, Big Data &amp; Systèmes</span>
-                    <h1>Bonjour, je suis <span class="grad">Esli Kadio</span></h1>
-                    <p class="lead">
-                        Étudiante en Master 1 Mobiquité, Big Data et Systèmes à l'ESATIC, en double diplomation
-                        avec l'Université Côte d'Azur. Je conçois des applications web et des projets
-                        d'intelligence artificielle, avec une vraie passion pour les nouvelles technologies.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">Voir mes projets <i class="bx bx-right-arrow-alt"></i></a>
-                        <a href="Copie de Deep Purple Professional College Student CV Resume.pdf" class="btn btn-outline" download>
-                            <i class="bx bx-download"></i> Télécharger mon CV
-                        </a>
-                    </div>
-                    <div class="social-media">
-                        <a href="https://github.com/esli-ariel" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
-                        <a href="https://www.linkedin.com/in/esli-ariel-kadio-2353062b3/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
-                    </div>
-                </div>
-                <div class="hero-visual reveal">
-                    <div class="photo-frame">
-                        <img src="img/Calque1.png" alt="Portrait d'Esli Kadio" width="470" height="763">
-                    </div>
-                    <div class="badge badge-1"><i class="bx bx-code-alt"></i> Génie logiciel</div>
-                    <div class="badge badge-2"><i class="bx bx-brain"></i> IA &amp; Data</div>
-                </div>
-            </div>
-        </section>
+            <svg class="waves" viewBox="0 0 1440 800" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                    <linearGradient id="wg" x1="0" x2="1">
+                        <stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#f59e0b"/>
+                    </linearGradient>
+                </defs>
+                <g fill="none" stroke="url(#wg)" stroke-width="1">
+                    <path class="w w1" d="M-50 520 C 250 300, 500 700, 800 480 S 1300 300, 1500 460"/>
+                    <path class="w w2" d="M-50 560 C 260 340, 520 740, 820 520 S 1300 340, 1500 500"/>
+                    <path class="w w3" d="M-50 600 C 270 380, 540 780, 840 560 S 1300 380, 1500 540"/>
+                    <path class="w w4" d="M-50 640 C 280 420, 560 820, 860 600 S 1300 420, 1500 580"/>
+                    <path class="w w5" d="M-50 480 C 240 260, 480 660, 780 440 S 1300 260, 1500 420"/>
+                </g>
+            </svg>
 
-        <!-- À propos -->
-        <section class="section alt" id="about">
-            <div class="container about-grid">
-                <div class="reveal">
-                    <span class="eyebrow">À propos</span>
-                    <h2 class="section-title">Curieuse, créative et rigoureuse</h2>
-                </div>
-                <div class="reveal">
-                    <p>
-                        Je suis une personne curieuse et créative, à l'aise dans le travail en équipe.
-                        J'ai le sens de la ponctualité et de l'assiduité, et j'aime apprendre
-                        de nouvelles choses, que ce soit en lisant ou en construisant des projets.
-                    </p>
-                    <p>
-                        En dehors des cours, je fais de la pâtisserie : un autre domaine où
-                        la précision et la créativité comptent autant qu'en programmation.
-                    </p>
-                    <ul class="facts">
-                        <li><i class="bx bx-map"></i> Abidjan, Côte d'Ivoire</li>
-                        <li><i class="bx bx-building-house"></i> ESATIC · double diplôme avec l'Université Côte d'Azur</li>
-                        <li><i class="bx bx-book-open"></i> Master 1 — Mobiquité, Big Data et Systèmes</li>
-                        <li><i class="bx bx-award"></i> Licence en informatique, génie logiciel</li>
+            <div class="container hero-grid">
+                <svg class="connectors" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                    <polyline points="55,20 66,30" />
+                    <polyline points="66,30 72,42" />
+                    <polyline points="72,42 80,42 84,50 97,50" />
+                </svg>
+                <a class="node node-gh" href="https://github.com/esli-ariel" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a class="node node-li" href="https://www.linkedin.com/in/esli-ariel-kadio-2353062b3/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+
+                <div class="hero-left">
+                    <div class="reveal">
+                        <h1 class="hello">Bonjour,</h1>
+                        <p class="lead">Étudiante en Master 1 Mobiquité, Big Data et Systèmes à l'ESATIC, en double diplomation avec l'Université Côte d'Azur. Je conçois des solutions web et d'IA qui transforment une idée en réalité.</p>
+                    </div>
+                    <ul class="roles reveal">
+                        <li>Étudiante en Master 1</li>
+                        <li>Développeuse web</li>
+                        <li>Data &amp; IA</li>
                     </ul>
                 </div>
+
+                <div class="hero-photo reveal">
+                    <img src="img/Calque1.png" alt="Portrait d'Esli Kadio" width="470" height="763">
+                </div>
+
+                <div class="hero-right">
+                    <div class="reveal">
+                        <p class="iam">Je suis<br><strong class="grad">Esli Kadio</strong></p>
+                        <p class="typing"><span id="typed" aria-live="off"></span><span class="caret"></span></p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary magnetic">Voir mes projets <i class="bx bx-right-arrow-alt"></i></a>
+                            <a href="Copie de Deep Purple Professional College Student CV Resume.pdf" class="btn btn-outline magnetic" download><i class="bx bx-download"></i> Mon CV</a>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://github.com/esli-ariel" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                            <a href="https://www.linkedin.com/in/esli-ariel-kadio-2353062b3/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-hint" aria-label="Faire défiler"><i class="bx bx-chevron-down"></i></a>
+        </section>
+
+        <!-- À propos : fenêtre d'éditeur -->
+        <section class="section" id="about">
+            <div class="container about-wrap">
+                <div class="reveal">
+                    <span class="eyebrow">À propos</span>
+                    <h2 class="section-title">À propos de moi</h2>
+                </div>
+                <div class="window reveal" id="about-window">
+                    <div class="chrome"><i></i><i></i><i></i><span>apropos.md</span></div>
+                    <div class="window-body">
+                        <div class="prompt"><i class="bx bx-sparkles"></i> <span>Qui est Esli ?</span></div>
+                        <p class="answer" id="about-typed">Je suis une personne curieuse et créative, à l'aise dans le travail en équipe. J'ai le sens de la ponctualité et de l'assiduité, et j'aime apprendre de nouvelles choses, que ce soit en lisant ou en construisant des projets. Je fais aussi de la pâtisserie : un autre domaine où la précision et la créativité comptent autant qu'en programmation.</p>
+                        <ul class="kv">
+                            <li><b>école</b> ESATIC · double diplôme avec l'Université Côte d'Azur</li>
+                            <li><b>niveau</b> Master 1 Mobiquité, Big Data et Systèmes</li>
+                            <li><b>ville</b> Abidjan, Côte d'Ivoire</li>
+                            <li><b>hors cours</b> pâtisserie et lecture</li>
+                        </ul>
+                        <div class="stats">
+                            <div><strong class="count" data-to="4">0</strong><span>projets sur GitHub</span></div>
+                            <div><strong class="count" data-to="3">0</strong><span>domaines : web, IA, Big Data</span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Compétences -->
-        <section class="section" id="skills">
-            <div class="container">
-                <div class="section-head reveal">
+        <!-- Compétences : circuit interactif -->
+        <section class="section alt" id="skills">
+            <div class="container skills-grid">
+                <div class="skills-left reveal">
                     <span class="eyebrow">Compétences</span>
-                    <h2 class="section-title">Ce que je sais faire</h2>
+                    <h2 class="section-title">Mes compétences</h2>
+                    <p class="muted">Touchez un nœud du circuit. Les compétences « en cours d'apprentissage » sont celles que je développe en Master 1.</p>
+                    <div class="skill-panel" id="skill-panel" aria-live="polite">
+                        <div class="skill-icon"><i class="bx bx-code-alt" id="skill-icon"></i></div>
+                        <div class="skill-body">
+                            <span class="status" id="skill-status" hidden><i class="bx bx-time-five"></i> En cours d'apprentissage</span>
+                            <h3 id="skill-title">Développement web</h3>
+                            <p id="skill-text"></p>
+                            <ul class="tags" id="skill-tags"></ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="cards three">
-                    <article class="card reveal">
-                        <div class="icon"><i class="bx bx-data"></i></div>
-                        <h3>Big Data &amp; systèmes</h3>
-                        <p>Analyse de données à grande échelle, architectures distribuées, cloud et administration des systèmes d'information.</p>
-                        <ul class="tags"><li>Big Data</li><li>Cloud</li><li>Data Lake</li><li>DevOps</li></ul>
-                    </article>
-                    <article class="card reveal">
-                        <div class="icon"><i class="bx bx-mobile-alt"></i></div>
-                        <h3>Applications mobiles &amp; IoT</h3>
-                        <p>Conception d'applications web et mobiles connectées, dans l'esprit de la mobiquité.</p>
-                        <ul class="tags"><li>Mobile</li><li>IoT</li><li>API</li></ul>
-                    </article>
-                    <article class="card reveal">
-                        <div class="icon"><i class="bx bx-code-alt"></i></div>
-                        <h3>Développement web</h3>
-                        <p>Conception de sites et d'applications web, du back-end à l'interface.</p>
-                        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Laravel</li></ul>
-                    </article>
-                    <article class="card reveal">
-                        <div class="icon"><i class="bx bx-brain"></i></div>
-                        <h3>IA &amp; données</h3>
-                        <p>Modèles de machine learning, analyse de données et reconnaissance.</p>
-                        <ul class="tags"><li>Python</li><li>Machine learning</li><li>Pandas</li></ul>
-                    </article>
-                    <article class="card reveal">
-                        <div class="icon"><i class="bx bx-bot"></i></div>
-                        <h3>Robotique</h3>
-                        <p>Réalisation de mini-projets et de projets de taille moyenne en robotique.</p>
-                        <ul class="tags"><li>Électronique</li><li>Prototypage</li></ul>
-                    </article>
+                <div class="circuit reveal" role="group" aria-label="Circuit des compétences">
+                    <svg viewBox="0 0 400 360" aria-hidden="true">
+                        <g class="traces">
+                            <polyline points="200,180 200,40" />
+                            <polyline points="200,180 240,140 240,110 330,110" />
+                            <polyline points="200,180 240,220 240,250 330,250" />
+                            <polyline points="200,180 200,320" />
+                            <polyline points="200,180 130,180 100,150 70,150" />
+                        </g>
+                        <g class="traces deco">
+                            <polyline points="200,40 140,40 110,70 40,70" /><circle cx="32" cy="70" r="7" />
+                            <polyline points="330,250 370,250 385,285" /><circle cx="388" cy="294" r="7" />
+                            <polyline points="200,320 140,320 110,290 50,290" /><circle cx="42" cy="290" r="7" />
+                            <polyline points="70,150 30,150 15,120" /><circle cx="12" cy="112" r="7" />
+                            <polyline points="330,110 370,70" /><circle cx="378" cy="62" r="7" />
+                        </g>
+                    </svg>
+                    <div class="hub"><i class="bx bx-chip"></i></div>
+                    <button class="node-skill active" data-skill="web" data-label="Web" style="left:50%;top:11.1%" aria-label="Web"><i class="bx bx-code-alt"></i></button>
+                    <button class="node-skill" data-skill="ia" data-label="IA &amp; données" style="left:82.5%;top:30.6%" aria-label="IA et données"><i class="bx bx-brain"></i></button>
+                    <button class="node-skill" data-skill="bigdata" data-label="Big Data" style="left:82.5%;top:69.4%" aria-label="Big Data"><i class="bx bx-data"></i></button>
+                    <button class="node-skill" data-skill="mobile" data-label="Mobile &amp; IoT" style="left:50%;top:88.9%" aria-label="Mobile et IoT"><i class="bx bx-mobile-alt"></i></button>
+                    <button class="node-skill" data-skill="robot" data-label="Robotique" style="left:17.5%;top:41.7%" aria-label="Robotique"><i class="bx bx-bot"></i></button>
                 </div>
             </div>
         </section>
 
-        <!-- Projets -->
-        <section class="section alt" id="projects">
+        <!-- Projets : filtres + cartes inclinables -->
+        <section class="section" id="projects">
             <div class="container">
                 <div class="section-head reveal">
                     <span class="eyebrow">Projets</span>
                     <h2 class="section-title">Réalisations récentes</h2>
-                    <p class="muted">Une sélection de mes projets, tous disponibles sur GitHub.</p>
+                    <p class="muted">Tous disponibles sur GitHub. Survolez une carte, ou filtrez par domaine.</p>
                 </div>
-                <div class="cards two">
-                    <article class="card project reveal">
+                <div class="filters reveal" role="group" aria-label="Filtrer les projets">
+                    <button class="filter active" data-filter="all">Tous</button>
+                    <button class="filter" data-filter="web">Web</button>
+                    <button class="filter" data-filter="ia">IA &amp; données</button>
+                </div>
+                <div class="cards two" id="project-grid">
+                    <article class="card project tilt reveal" data-cat="web ia">
+                        <div class="chrome"><i></i><i></i><i></i><span>zephyr</span></div>
                         <div class="project-top"><i class="bx bx-wind"></i><span class="pill">Application web</span></div>
                         <h3>Zéphyr</h3>
                         <p>Application web avec assistant IA, comptes utilisateurs, globe interactif, modèle de secours et intégration continue.</p>
                         <ul class="tags"><li>JavaScript</li><li>Python</li><li>IA</li><li>CI</li></ul>
                         <a class="link" href="https://github.com/esli-ariel/Zephyr" target="_blank" rel="noopener">Voir sur GitHub <i class="bx bx-link-external"></i></a>
                     </article>
-                    <article class="card project reveal">
+                    <article class="card project tilt reveal" data-cat="ia">
+                        <div class="chrome"><i></i><i></i><i></i><span>reconnaissance-faciale</span></div>
                         <div class="project-top"><i class="bx bx-face"></i><span class="pill">Vision par ordinateur</span></div>
                         <h3>Reconnaissance faciale</h3>
                         <p>Système de reconnaissance faciale pour la gestion automatique des présences, avec registre exportable.</p>
                         <ul class="tags"><li>Python</li><li>InsightFace</li><li>OpenCV</li></ul>
                         <a class="link" href="https://github.com/esli-ariel/reconnaissance-faciale" target="_blank" rel="noopener">Voir sur GitHub <i class="bx bx-link-external"></i></a>
                     </article>
-                    <article class="card project reveal">
+                    <article class="card project tilt reveal" data-cat="ia">
+                        <div class="chrome"><i></i><i></i><i></i><span>detection_transactions</span></div>
                         <div class="project-top"><i class="bx bx-shield-quarter"></i><span class="pill">Data science</span></div>
                         <h3>Détection de transactions frauduleuses</h3>
                         <p>Exploration, préparation des données et comparaison de modèles : régression logistique, Random Forest, XGBoost et LightGBM.</p>
                         <ul class="tags"><li>Python</li><li>XGBoost</li><li>LightGBM</li></ul>
                         <a class="link" href="https://github.com/esli-ariel/Detection_transactions" target="_blank" rel="noopener">Voir sur GitHub <i class="bx bx-link-external"></i></a>
                     </article>
-                    <article class="card project reveal">
+                    <article class="card project tilt reveal" data-cat="ia">
+                        <div class="chrome"><i></i><i></i><i></i><span>assistant-ia-langues-locales</span></div>
                         <div class="project-top"><i class="bx bx-microphone"></i><span class="pill">Projet d'équipe</span></div>
                         <h3>Assistant IA en langues locales</h3>
                         <p>Assistant vocal et texte capable de comprendre et répondre en dioula et en baoulé.</p>
@@ -175,14 +217,15 @@
             </div>
         </section>
 
-        <!-- Formation -->
-        <section class="section" id="education">
+        <!-- Parcours : frise qui se remplit au défilement -->
+        <section class="section alt" id="education">
             <div class="container narrow">
-                <div class="section-head reveal">
+                <div class="section-head center reveal">
                     <span class="eyebrow">Parcours</span>
                     <h2 class="section-title">Formation</h2>
                 </div>
-                <ol class="timeline">
+                <ol class="timeline" id="timeline">
+                    <span class="timeline-fill" id="timeline-fill"></span>
                     <li class="reveal">
                         <span class="year">2026 · En cours</span>
                         <h3>Master 1 — Mobiquité, Big Data et Systèmes</h3>
@@ -212,17 +255,42 @@
             </div>
         </section>
 
+        <!-- Assistant -->
+        <section class="section alt" id="assistant">
+            <div class="container narrow">
+                <div class="section-head center reveal">
+                    <span class="eyebrow">Assistant</span>
+                    <h2 class="section-title">Posez vos questions</h2>
+                    <p class="muted">Choisissez une question, l'assistant répond.</p>
+                </div>
+                <div class="window chat reveal">
+                    <div class="chrome"><i></i><i></i><i></i><span>assistant</span></div>
+                    <div class="window-body">
+                        <div class="chat-log" id="chat-log" aria-live="polite">
+                            <div class="msg bot"><span class="av"><i class="bx bx-bot"></i></span><p>Bonjour ! Choisissez une question pour en savoir plus sur Esli.</p></div>
+                        </div>
+                        <div class="chat-suggest" id="chat-suggest">
+                            <button data-q="formation">Quelle est sa formation ?</button>
+                            <button data-q="projets">Quels projets a-t-elle réalisés ?</button>
+                            <button data-q="apprend">Que apprend-elle en ce moment ?</button>
+                            <button data-q="loisirs">Que fait-elle en dehors des cours ?</button>
+                            <button data-q="contact">Comment la contacter ?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact -->
-        <section class="section alt" id="contact">
-            <div class="container narrow center">
-                <div class="reveal">
-                    <span class="eyebrow">Contact</span>
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="cta reveal">
                     <h2 class="section-title">Travaillons ensemble</h2>
-                    <p class="muted">Un stage, un projet, une opportunité ? Retrouvez-moi sur LinkedIn ou GitHub, ou téléchargez mon CV.</p>
+                    <p>Un stage, un projet, une opportunité ? Retrouvez-moi sur LinkedIn ou GitHub, ou téléchargez mon CV.</p>
                     <div class="hero-actions center-actions">
-                        <a href="https://www.linkedin.com/in/esli-ariel-kadio-2353062b3/" class="btn btn-primary" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/esli-ariel" class="btn btn-outline" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
-                        <a href="Copie de Deep Purple Professional College Student CV Resume.pdf" class="btn btn-outline" download><i class="bx bx-download"></i> CV</a>
+                        <a href="https://www.linkedin.com/in/esli-ariel-kadio-2353062b3/" class="btn btn-light magnetic" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/esli-ariel" class="btn btn-ghost magnetic" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+                        <a href="Copie de Deep Purple Professional College Student CV Resume.pdf" class="btn btn-ghost magnetic" download><i class="bx bx-download"></i> CV</a>
                     </div>
                 </div>
             </div>
@@ -231,7 +299,7 @@
 
     <footer class="footer">
         <p>&copy; <span id="year">2026</span> Esli Kadio. Tous droits réservés.</p>
-        <a href="#home" class="to-top" aria-label="Retour en haut"><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#home" class="to-top" id="to-top" aria-label="Retour en haut"><i class="bx bx-up-arrow-alt"></i></a>
     </footer>
 
     <script src="script.js"></script>
