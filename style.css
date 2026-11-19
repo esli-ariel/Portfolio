@@ -244,7 +244,7 @@ main, .footer { position: relative; z-index: 1; }
 .filter:hover { border-color: var(--accent); }
 .filter.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 .cards { display: grid; gap: 1.5rem; }
-.cards.two { grid-template-columns: repeat(2, 1fr); }
+.cards.two { grid-template-columns: repeat(3, 1fr); }
 .card {
     position: relative; background: var(--surface); border: 1px solid var(--border);
     border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow);
@@ -458,4 +458,64 @@ main, .footer { position: relative; z-index: 1; }
     .kv li { flex-direction: column; gap: .1rem; }
     .stats { gap: 1.25rem; }
     .window-body { padding: 1.25rem; }
+}
+
+/* Projets : 3 colonnes sur grand écran */
+@media (max-width: 1060px) { .cards.two { grid-template-columns: repeat(2, 1fr); } }
+.card { padding: 1.75rem; }
+.card .chrome { margin: -1.75rem -1.75rem 1.4rem; }
+.card h3 { font-size: 1.15rem; }
+.card p { font-size: .95rem; }
+
+/* À propos : carte d'identité, onglets de fichiers, panneaux */
+.about-side .muted { margin: 1rem 0 1.75rem; }
+.id-card {
+    display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow);
+}
+.id-card img {
+    flex: none; width: 64px; height: 64px; border-radius: 50%; object-fit: cover; object-position: top center;
+    background: linear-gradient(160deg, #1b2a41, #4c2fa8 60%, #f59e0b); border: 2px solid var(--accent-2);
+}
+.id-card div { display: grid; line-height: 1.35; }
+.id-card strong { font-size: 1.05rem; }
+.id-card span { font-size: .85rem; color: var(--muted); }
+.id-card .loc i { color: var(--accent-2); vertical-align: -2px; }
+.chrome { flex-wrap: wrap; }
+.file-tabs { display: flex; gap: .25rem; margin-left: .75rem; flex-wrap: wrap; }
+.file-tabs button {
+    padding: .3rem .75rem; border: 0; border-radius: 8px 8px 0 0; cursor: pointer; background: transparent;
+    font: inherit; color: var(--muted); transition: color .2s, background .2s;
+}
+.file-tabs button:hover { color: var(--text); }
+.file-tabs button.active { background: var(--surface); color: var(--accent-2); box-shadow: inset 0 -2px 0 var(--accent-2); }
+.panes { display: grid; }
+.pane { grid-area: 1 / 1; visibility: hidden; opacity: 0; transform: translateY(8px); transition: opacity .35s, transform .35s, visibility 0s .35s; }
+.pane.active { visibility: visible; opacity: 1; transform: none; transition: opacity .35s, transform .35s; }
+.traits { display: grid; gap: 1rem; }
+.traits li { display: flex; gap: 1rem; align-items: flex-start; }
+.traits li > i {
+    flex: none; width: 42px; height: 42px; display: grid; place-items: center; border-radius: 12px;
+    background: var(--accent-soft); color: var(--accent-2); font-size: 1.4rem;
+}
+.traits strong { display: block; }
+.traits span { color: var(--muted); font-size: .94rem; }
+@media (max-width: 680px) { .chrome span { transform: none; } }
+
+.org { color: var(--accent-2) !important; font-weight: 600; font-size: .9rem !important; margin: -.25rem 0 .6rem; }
+
+/* Expériences : stages en grand, autres cartes en 3 colonnes */
+#experience-grid { grid-template-columns: repeat(6, 1fr); }
+#experience-grid .card { grid-column: span 2; }
+#experience-grid .card.stage { grid-column: span 3; }
+.place { color: var(--muted) !important; font-size: .88rem !important; margin: 0 0 .6rem; }
+.place i { color: var(--accent-2); vertical-align: -2px; }
+@media (max-width: 1060px) {
+    #experience-grid { grid-template-columns: repeat(2, 1fr); }
+    #experience-grid .card, #experience-grid .card.stage { grid-column: auto; }
+    #experience-grid .card.stage { grid-column: 1 / -1; }
+}
+@media (max-width: 680px) {
+    #experience-grid { grid-template-columns: 1fr; }
+    #experience-grid .card.stage { grid-column: auto; }
 }

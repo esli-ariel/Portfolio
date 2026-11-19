@@ -73,7 +73,7 @@ $$('.reveal').forEach((el, i) => {
 });
 
 /* Machine à écrire */
-const roles = ['étudiante en Master 1 MBDS', 'développeuse web', 'passionnée de Big Data', 'curieuse d\'IA'];
+const roles = ['étudiante en Master 1 MBDS', 'ingénieure logiciel junior', 'développeuse web', 'passionnée de Big Data', 'curieuse d\'IA'];
 const typed = $('#typed');
 if (reduceMotion) {
     typed.textContent = roles[0];
@@ -92,11 +92,11 @@ if (reduceMotion) {
 
 /* Compétences : onglets */
 const skills = {
-    web: { icon: 'bx-code-alt', title: 'Développement web', text: 'Conception de sites et d\'applications web, du back-end à l\'interface.', tags: ['HTML', 'CSS', 'JavaScript', 'Laravel'] },
-    ia: { icon: 'bx-brain', title: 'IA & données', text: 'Modèles de machine learning, analyse de données et reconnaissance.', tags: ['Python', 'Machine learning', 'Pandas'] },
+    web: { icon: 'bx-code-alt', title: 'Développement web', text: 'Conception de sites et d\'applications web, du back-end à l\'interface.', tags: ['HTML', 'CSS', 'JavaScript', 'Laravel', 'Spring Boot', 'SQL / MySQL'] },
+    ia: { icon: 'bx-brain', title: 'IA & données', text: 'Modèles de machine learning, analyse de données et reconnaissance.', tags: ['Python', 'Machine learning', 'Pandas', 'Java', 'C'] },
     bigdata: { icon: 'bx-data', title: 'Big Data & systèmes', text: 'Analyse de données à grande échelle, architectures distribuées, cloud et administration des systèmes d\'information.', tags: ['Big Data', 'Cloud', 'Data Lake', 'DevOps'], learning: true },
     mobile: { icon: 'bx-mobile-alt', title: 'Applications mobiles & IoT', text: 'Conception d\'applications web et mobiles connectées, dans l\'esprit de la mobiquité.', tags: ['Mobile', 'IoT', 'API'], learning: true },
-    robot: { icon: 'bx-bot', title: 'Robotique', text: 'Réalisation de mini-projets et de projets de taille moyenne en robotique.', tags: ['Électronique', 'Prototypage'] }
+    robot: { icon: 'bx-bot', title: 'Robotique', text: 'Réalisation de mini-projets et de projets de taille moyenne en robotique. Certification en robotique obtenue à l\'Orange Digital Center en 2023.', tags: ['Arduino', 'C++', 'Électronique'] }
 };
 const panel = $('#skill-panel');
 function showSkill(key) {
@@ -139,12 +139,19 @@ if (about && !reduceMotion && 'IntersectionObserver' in window) {
     aio.observe($('#about-window'));
 }
 
+/* À propos : onglets de fichiers */
+$$('.file-tabs button').forEach(b => b.addEventListener('click', () => {
+    $$('.file-tabs button').forEach(x => { x.classList.toggle('active', x === b); x.setAttribute('aria-selected', x === b); });
+    $$('#about-window .pane').forEach(p => p.classList.toggle('active', p.dataset.pane === b.dataset.pane));
+}));
+
 /* Assistant de questions */
 const answers = {
     formation: ['Quelle est sa formation ?', "Esli est en Master 1 Mobiquité, Big Data et Systèmes à l'ESATIC, en double diplomation avec l'Université Côte d'Azur. Elle a auparavant suivi une Licence en informatique, option génie logiciel."],
-    projets: ['Quels projets a-t-elle réalisés ?', "Zéphyr (application web avec assistant IA), un système de reconnaissance faciale pour les présences, une détection de transactions frauduleuses et un assistant IA en dioula et baoulé, réalisé en équipe. Tout est sur son GitHub."],
+    projets: ['Quels projets a-t-elle réalisés ?', "Neuf projets sur GitHub : Zéphyr (application web avec assistant IA), reconnaissance faciale pour les présences, détection de transactions frauduleuses, assistant et plateforme IA en langues locales, une application de transfert d'argent type Wave, SmartCourse Web, une gestion des absences et une gestion de bibliothèque en Java."],
     apprend: ['Que apprend-elle en ce moment ?', "En Master 1, elle se forme au Big Data, au cloud, au DevOps, aux applications mobiles et à l'IoT."],
     loisirs: ['Que fait-elle en dehors des cours ?', "De la pâtisserie et beaucoup de lecture. Elle aime apprendre de nouvelles choses."],
+    experience: ['A-t-elle des expériences en entreprise ?', "Oui : un stage en cours à l'Orange Digital Academy (Orange Côte d'Ivoire, depuis juillet 2026) et un stage de développeur informatique à la Société Ivoirienne de Raffinage (août à novembre 2025). Elle a aussi une certification en robotique (2023) et du bénévolat avec l'UNICEF."],
     contact: ['Comment la contacter ?', "Le plus simple : LinkedIn ou GitHub, avec les boutons de la section Contact. Son CV est aussi téléchargeable."]
 };
 const log = $('#chat-log');

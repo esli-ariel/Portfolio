@@ -28,6 +28,7 @@
             <a href="#skills"><i class="bx bx-bulb"></i><span>Compétences</span></a>
             <a href="#projects"><i class="bx bx-folder-open"></i><span>Projets</span></a>
             <a href="#education"><i class="bx bx-book-open"></i><span>Parcours</span></a>
+            <a href="#experience"><i class="bx bx-briefcase-alt-2"></i><span>Expériences</span></a>
             <a href="#contact"><i class="bx bx-envelope"></i><span>Contact</span></a>
         </nav>
         <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème"><i class="bx bx-moon"></i></button>
@@ -95,27 +96,66 @@
             <a href="#about" class="scroll-hint" aria-label="Faire défiler"><i class="bx bx-chevron-down"></i></a>
         </section>
 
-        <!-- À propos : fenêtre d'éditeur -->
+        <!-- À propos : fenêtre d'éditeur à onglets -->
         <section class="section" id="about">
             <div class="container about-wrap">
-                <div class="reveal">
+                <div class="about-side reveal">
                     <span class="eyebrow">À propos</span>
                     <h2 class="section-title">À propos de moi</h2>
+                    <p class="muted">Étudiante en informatique, passionnée de technologie, curieuse de tout ce qui se construit.</p>
+                    <div class="id-card">
+                        <img src="img/Calque1.png" alt="Portrait d'Esli Kadio" width="470" height="763" loading="lazy">
+                        <div>
+                            <strong>Esli Kadio</strong>
+                            <span>Master 1 MBDS · ESATIC × UCA</span>
+                            <span class="loc"><i class="bx bx-map"></i> Abidjan, Côte d'Ivoire</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="window reveal" id="about-window">
-                    <div class="chrome"><i></i><i></i><i></i><span>apropos.md</span></div>
-                    <div class="window-body">
-                        <div class="prompt"><i class="bx bx-sparkles"></i> <span>Qui est Esli ?</span></div>
-                        <p class="answer" id="about-typed">Je suis une personne curieuse et créative, à l'aise dans le travail en équipe. J'ai le sens de la ponctualité et de l'assiduité, et j'aime apprendre de nouvelles choses, que ce soit en lisant ou en construisant des projets. Je fais aussi de la pâtisserie : un autre domaine où la précision et la créativité comptent autant qu'en programmation.</p>
-                        <ul class="kv">
-                            <li><b>école</b> ESATIC · double diplôme avec l'Université Côte d'Azur</li>
-                            <li><b>niveau</b> Master 1 Mobiquité, Big Data et Systèmes</li>
-                            <li><b>ville</b> Abidjan, Côte d'Ivoire</li>
-                            <li><b>hors cours</b> pâtisserie et lecture</li>
-                        </ul>
-                        <div class="stats">
-                            <div><strong class="count" data-to="4">0</strong><span>projets sur GitHub</span></div>
-                            <div><strong class="count" data-to="3">0</strong><span>domaines : web, IA, Big Data</span></div>
+                    <div class="chrome">
+                        <i></i><i></i><i></i>
+                        <div class="file-tabs" role="tablist" aria-label="Sections de présentation">
+                            <button role="tab" class="active" data-pane="bio" aria-selected="true">apropos.md</button>
+                            <button role="tab" data-pane="qualites" aria-selected="false">qualites.md</button>
+                            <button role="tab" data-pane="hors" aria-selected="false">hors-cours.md</button>
+                        </div>
+                    </div>
+                    <div class="window-body panes">
+                        <div class="pane active" data-pane="bio" role="tabpanel">
+                            <div class="prompt"><i class="bx bx-sparkles"></i> <span>Qui est Esli ?</span></div>
+                            <p class="answer" id="about-typed">Je suis une personne curieuse et créative, à l'aise dans le travail en équipe. J'ai le sens de la ponctualité et de l'assiduité, et j'aime apprendre de nouvelles choses, que ce soit en lisant ou en construisant des projets. Je fais aussi de la pâtisserie : un autre domaine où la précision et la créativité comptent autant qu'en programmation.</p>
+                            <ul class="kv">
+                                <li><b>école</b> ESATIC · double diplôme avec l'Université Côte d'Azur (2026 – 2028)</li>
+                                <li><b>niveau</b> Master 1 Mobiquité, Big Data et Systèmes</li>
+                                <li><b>avant</b> Licence en informatique, génie logiciel (2022 – 2025)</li>
+                                <li><b>ville</b> Abidjan, Côte d'Ivoire</li>
+                                <li><b>langues</b> français · anglais (débutant)</li>
+                            </ul>
+                            <div class="stats">
+                                <div><strong class="count" data-to="9">0</strong><span>projets sur GitHub</span></div>
+                                <div><strong class="count" data-to="4">0</strong><span>langages : Python, PHP, Java, JavaScript</span></div>
+                            </div>
+                        </div>
+                        <div class="pane" data-pane="qualites" role="tabpanel">
+                            <div class="prompt"><i class="bx bx-sparkles"></i> <span>Quelles sont ses qualités ?</span></div>
+                            <ul class="traits">
+                                <li><i class="bx bx-bulb"></i><div><strong>Curieuse</strong><span>Aime comprendre et apprendre de nouvelles choses, en lisant comme en construisant.</span></div></li>
+                                <li><i class="bx bx-palette"></i><div><strong>Créative</strong><span>Cherche des solutions originales et soigne le rendu de ses projets.</span></div></li>
+                                <li><i class="bx bx-group"></i><div><strong>Esprit d'équipe</strong><span>À l'aise dans le travail collectif, comme sur l'assistant IA en langues locales ou la gestion des absences.</span></div></li>
+                                <li><i class="bx bx-time-five"></i><div><strong>Ponctuelle et assidue</strong><span>Le sens des délais et de la régularité.</span></div></li>
+                                <li><i class="bx bx-line-chart"></i><div><strong>Analyse et résolution de problèmes</strong><span>Un bon esprit d'analyse, au service des projets techniques.</span></div></li>
+                                <li><i class="bx bx-chalkboard"></i><div><strong>Leadership et pédagogie</strong><span>A animé des ateliers de sensibilisation auprès de jeunes.</span></div></li>
+                            </ul>
+                        </div>
+                        <div class="pane" data-pane="hors" role="tabpanel">
+                            <div class="prompt"><i class="bx bx-sparkles"></i> <span>Et en dehors des cours ?</span></div>
+                            <ul class="traits">
+                                <li><i class="bx bx-cake"></i><div><strong>Pâtisserie</strong><span>Un autre domaine où la précision et la créativité comptent autant qu'en programmation.</span></div></li>
+                                <li><i class="bx bx-restaurant"></i><div><strong>Cuisine</strong><span>Aime cuisiner, avec la pâtisserie en tête.</span></div></li>
+                                <li><i class="bx bx-book-open"></i><div><strong>Lecture</strong><span>Un plaisir qui nourrit la curiosité.</span></div></li>
+                                <li><i class="bx bx-rocket"></i><div><strong>En ce moment</strong><span>Big Data, cloud, DevOps, applications mobiles et IoT dans le cadre du Master 1.</span></div></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -178,6 +218,7 @@
                     <button class="filter active" data-filter="all">Tous</button>
                     <button class="filter" data-filter="web">Web</button>
                     <button class="filter" data-filter="ia">IA &amp; données</button>
+                    <button class="filter" data-filter="java">Java</button>
                 </div>
                 <div class="cards two" id="project-grid">
                     <article class="card project tilt reveal" data-cat="web ia">
@@ -212,6 +253,46 @@
                         <ul class="tags"><li>Python</li><li>NLP</li><li>Jupyter</li></ul>
                         <a class="link" href="https://github.com/EdithNancy/assistant-ia-langues-locales" target="_blank" rel="noopener">Voir sur GitHub <i class="bx bx-link-external"></i></a>
                     </article>
+                    <article class="card project tilt reveal" data-cat="ia web">
+                        <div class="chrome"><i></i><i></i><i></i><span>projet_ia_langues-_locales</span></div>
+                        <div class="project-top"><i class="bx bx-world"></i><span class="pill">Plateforme IA</span></div>
+                        <h3>Plateforme culturelle en langues locales</h3>
+                        <p>API avec chat IA, synthèse vocale, quiz, régions et ethnies de Côte d'Ivoire, pour découvrir les langues et la culture locales.</p>
+                        <ul class="tags"><li>Python</li><li>FastAPI</li><li>IA</li><li>TTS</li></ul>
+                        <a class="link" href="https://github.com/esli-ariel/projet_ia_langues-_locales" target="_blank" rel="noopener">Voir sur GitHub <i class="bx bx-link-external"></i></a>
+                    </article>
+                    <article class="card project tilt reveal" data-cat="web">
+                        <div class="chrome"><i></i><i></i><i></i><span>smartcourse-web</span></div>
+                        <div class="project-top"><i class="bx bx-book-reader"></i><span class="pill">Application web</span></div>
+                        <h3>SmartCourse Web</h3>
+                        <p>Application web Laravel avec authentification, profil utilisateur et tableau de bord, construite avec Tailwind et Vite.</p>
+                        <ul class="tags"><li>Laravel</li><li>PHP</li><li>Tailwind</li><li>Vite</li></ul>
+                        <a class="link" href="https://github.com/esli-ariel/smartcourse-web" target="_blank" rel="noopener">Voir sur GitHub <i class="bx bx-link-external"></i></a>
+                    </article>
+                    <article class="card project tilt reveal" data-cat="web">
+                        <div class="chrome"><i></i><i></i><i></i><span>wave_devops_L3</span></div>
+                        <div class="project-top"><i class="bx bx-transfer"></i><span class="pill">Application web</span></div>
+                        <h3>Transfert d'argent (type Wave)</h3>
+                        <p>Clients, agents et administrateurs, comptes, dépôts, envois d'argent entre utilisateurs et reçus PDF. Conteneurisée avec Docker.</p>
+                        <ul class="tags"><li>Laravel</li><li>PHP</li><li>Docker</li><li>PDF</li></ul>
+                        <a class="link" href="https://github.com/esli-ariel/wave_devops_L3" target="_blank" rel="noopener">Voir sur GitHub <i class="bx bx-link-external"></i></a>
+                    </article>
+                    <article class="card project tilt reveal" data-cat="java">
+                        <div class="chrome"><i></i><i></i><i></i><span>GESTION-ABSCENCE</span></div>
+                        <div class="project-top"><i class="bx bx-user-check"></i><span class="pill">Projet d'équipe</span></div>
+                        <h3>Gestion des absences (PresenceUta)</h3>
+                        <p>Application de bureau JavaFX pour suivre les absences des étudiants, avec les rôles enseignant et administrateur, classes et modules.</p>
+                        <ul class="tags"><li>Java</li><li>JavaFX</li><li>DAO</li></ul>
+                        <a class="link" href="https://github.com/Coolibaly/GESTION-ABSCENCE" target="_blank" rel="noopener">Voir sur GitHub <i class="bx bx-link-external"></i></a>
+                    </article>
+                    <article class="card project tilt reveal" data-cat="java">
+                        <div class="chrome"><i></i><i></i><i></i><span>Gbibliotheque</span></div>
+                        <div class="project-top"><i class="bx bx-library"></i><span class="pill">Application de bureau</span></div>
+                        <h3>Gestion d'une bibliothèque</h3>
+                        <p>Application Java de gestion d'une bibliothèque, avec base de données MySQL et gestion des livres.</p>
+                        <ul class="tags"><li>Java</li><li>MySQL</li><li>NetBeans</li></ul>
+                        <a class="link" href="https://github.com/esli-ariel/Gbibliotheque" target="_blank" rel="noopener">Voir sur GitHub <i class="bx bx-link-external"></i></a>
+                    </article>
                 </div>
                 <p class="more reveal"><a class="link" href="https://github.com/esli-ariel?tab=repositories" target="_blank" rel="noopener">Tous mes dépôts <i class="bx bx-right-arrow-alt"></i></a></p>
             </div>
@@ -227,13 +308,13 @@
                 <ol class="timeline" id="timeline">
                     <span class="timeline-fill" id="timeline-fill"></span>
                     <li class="reveal">
-                        <span class="year">2026 · En cours</span>
+                        <span class="year">2026 – 2028 · En cours</span>
                         <h3>Master 1 — Mobiquité, Big Data et Systèmes</h3>
                         <p>ESATIC, en double diplomation avec l'Université Côte d'Azur</p>
                     </li>
                     <li class="reveal">
-                        <span class="year">2025</span>
-                        <h3>Licence 3 — Informatique, génie logiciel</h3>
+                        <span class="year">2022 – 2025</span>
+                        <h3>Licence — Informatique, génie logiciel</h3>
                         <p>Université des Technologies d'Abidjan, Riviera Palmeraie</p>
                     </li>
                     <li class="reveal">
@@ -255,6 +336,62 @@
             </div>
         </section>
 
+        <!-- Expériences -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Expériences</span>
+                    <h2 class="section-title">Stages, certifications &amp; engagements</h2>
+                    <p class="muted">Deux stages en entreprise, une certification en robotique et de l'engagement auprès des jeunes.</p>
+                </div>
+                <div class="cards two" id="experience-grid">
+                    <article class="card project stage tilt reveal">
+                        <div class="chrome"><i></i><i></i><i></i><span>orange-digital-academy.md</span></div>
+                        <div class="project-top"><i class="bx bx-buildings"></i><span class="pill">Stage · juil. 2026 – aujourd'hui</span></div>
+                        <span class="status"><i class="bx bx-time-five"></i> En cours</span>
+                        <h3>Stagiaire à l'Orange Digital Academy</h3>
+                        <p class="org">Orange Côte d'Ivoire</p>
+                        <p class="place"><i class="bx bx-map"></i> Abidjan · sur site</p>
+                        <p>Stage en cours au sein de l'Orange Digital Academy, en parallèle du Master 1.</p>
+                        <ul class="tags"><li>Orange</li><li>Stage</li><li>Sur site</li></ul>
+                    </article>
+                    <article class="card project stage tilt reveal">
+                        <div class="chrome"><i></i><i></i><i></i><span>sir.md</span></div>
+                        <div class="project-top"><i class="bx bx-code-block"></i><span class="pill">Stage · août – nov. 2025</span></div>
+                        <h3>Stagiaire développeur informatique</h3>
+                        <p class="org">Société Ivoirienne de Raffinage</p>
+                        <p class="place"><i class="bx bx-map"></i> Port-Bouët, Abidjan · sur site</p>
+                        <p>Stage de 4 mois en développement logiciel, avec modélisation UML et développement d'applications.</p>
+                        <ul class="tags"><li>UML</li><li>Développement de logiciels</li><li>Stage</li></ul>
+                    </article>
+                    <article class="card project tilt reveal">
+                        <div class="chrome"><i></i><i></i><i></i><span>certification.md</span></div>
+                        <div class="project-top"><i class="bx bx-bot"></i><span class="pill">2023</span></div>
+                        <h3>Certification en robotique</h3>
+                        <p class="org">Orange Digital Center</p>
+                        <p>Formation pratique à la conception de projets de robotique : programmation de cartes, électronique et prototypage.</p>
+                        <ul class="tags"><li>Arduino</li><li>C++</li><li>Électronique</li></ul>
+                    </article>
+                    <article class="card project tilt reveal">
+                        <div class="chrome"><i></i><i></i><i></i><span>u-report.md</span></div>
+                        <div class="project-top"><i class="bx bx-leaf"></i><span class="pill">Septembre 2021</span></div>
+                        <h3>Bénévole</h3>
+                        <p class="org">UNICEF · U-Report</p>
+                        <p>Engagement citoyen auprès des jeunes : embellissement du cadre de vie, plantation d'arbres et animation d'ateliers de sensibilisation.</p>
+                        <ul class="tags"><li>Bénévolat</li><li>Sensibilisation</li><li>Animation</li></ul>
+                    </article>
+                    <article class="card project tilt reveal">
+                        <div class="chrome"><i></i><i></i><i></i><span>voix-des-jeunes.md</span></div>
+                        <div class="project-top"><i class="bx bx-megaphone"></i><span class="pill">Septembre 2021</span></div>
+                        <h3>Voix des Jeunes School</h3>
+                        <p class="org">UNICEF · Social Change Factory</p>
+                        <p>Participation au programme Voix des Jeunes School, consacré à l'engagement des jeunes et au changement social.</p>
+                        <ul class="tags"><li>Leadership</li><li>Engagement</li><li>Pédagogie</li></ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- Assistant -->
         <section class="section alt" id="assistant">
             <div class="container narrow">
@@ -273,6 +410,7 @@
                             <button data-q="formation">Quelle est sa formation ?</button>
                             <button data-q="projets">Quels projets a-t-elle réalisés ?</button>
                             <button data-q="apprend">Que apprend-elle en ce moment ?</button>
+                            <button data-q="experience">A-t-elle des expériences en entreprise ?</button>
                             <button data-q="loisirs">Que fait-elle en dehors des cours ?</button>
                             <button data-q="contact">Comment la contacter ?</button>
                         </div>
