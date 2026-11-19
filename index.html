@@ -2,180 +2,220 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Esli Kadio — Étudiante en génie logiciel</title>
+    <meta name="description" content="Portfolio d'Esli Kadio, étudiante en 3ème année de Licence informatique option génie logiciel à l'Université des Technologies d'Abidjan.">
+    <meta property="og:title" content="Esli Kadio — Étudiante en génie logiciel">
+    <meta property="og:description" content="Développement web, IA et projets de génie logiciel.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="img/20048676-99036195564_14-s5-v1.png" type="image/png">
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="/img/20048676-99036195564_14-s5-v1.png" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Esli 
-            <span>Kadio</span>
-        </a>
-
-        <i class='bx bx-menu' id="menu-icon" ></i>
-
-        <!--menu -->
-        <nav class="navbar">
+    <header class="header" id="header">
+        <a href="#home" class="logo">Esli<span>.</span>Kadio</a>
+        <button class="menu-toggle" id="menu-icon" aria-label="Ouvrir le menu" aria-expanded="false">
+            <i class="bx bx-menu"></i>
+        </button>
+        <nav class="navbar" id="navbar">
             <a href="#home" class="active">Accueil</a>
-            <a href="#about">A Propos</a>
-            <a href="#services">Services</a>
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
             <a href="#education">Formation</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact" class="nav-cta">Contact</a>
         </nav>
     </header>
-    
-    <!--home section -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, C'est Moi</h3>
-            <h1>Esli kadio</h1>
-            <h3 class="text-animation">Et Je Suis <span></span></h3>
-            <p>Étudiante en 3<sup>ème</sup> année de 
-                Licence en informatique option genie logiciel,
-                passionnée de nouvelles technologies.
-                </p>
-                <div class="social-media">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.linkedin.com/in/esli-ariel-kadio-2353062b3/"><i class='bx bxl-linkedin' ></i></a>
-                    
+
+    <main>
+        <!-- Accueil -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <span class="eyebrow">Étudiante en génie logiciel</span>
+                    <h1>Bonjour, je suis <span class="grad">Esli Kadio</span></h1>
+                    <p class="lead">
+                        Étudiante en 3<sup>ème</sup> année de Licence informatique, option génie logiciel.
+                        Je conçois des applications web et des projets d'intelligence artificielle,
+                        avec une vraie passion pour les nouvelles technologies.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Voir mes projets <i class="bx bx-right-arrow-alt"></i></a>
+                        <a href="Copie de Deep Purple Professional College Student CV Resume.pdf" class="btn btn-outline" download>
+                            <i class="bx bx-download"></i> Télécharger mon CV
+                        </a>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://github.com/esli-ariel" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                        <a href="https://www.linkedin.com/in/esli-ariel-kadio-2353062b3/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                    </div>
                 </div>
-                <a href="/Copie de Deep Purple Professional College Student CV Resume.pdf" class="btn">Download Cv</a>
-        </div>
-        <div class="home-img">
-            <img src="./img/Calque1.png" >
-        </div>
-    </section>
-
-    <!--about section -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="./img/Calque1.png" alt="">
-        </div>
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span> </h2>
-            <h3></h3>
-            <p>je suis une personne curieuse et créative qui peut travailler en équipe.
-                j'ai aussi le sens de la ponctualité et de l'assiduité.
-                je fait aussi de la patisserie dans mes temps libre.
-                j'adore aussi la lecture et apprendre de nouvelles choses. 
-                
-            </p>
-            
-        </div>
-    </section>
-
-    <!--services section -->
-    <section class="services" id="services">
-        <h2 class="heading" >Autres <span>Services </span></h2>
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Developpement</h3>
-                <p>je concois des sites web</p> 
-            </div>
-
-            <div class="services-box">
-                <i class='bx bx-bot'></i>
-                <h3>Robotique</h3>
-                <p>je concois des mini projets et moyens projets a l'aide de la robotique </p>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bxs-paint'></i>
-                <h3>Frontend Developpement</h3>
-                <p>je concois des interfaces de sites web</p>
-            </div>
-
-        </div>
-    </section>
-    <!--education section-->
-    <section class="education" id="education">
-        <h2 class="title">Formation </h2>
-
-            <div class="temps_choses">
-
-                <div class="temps_chose">
-                    <div class="temps_point"></div>
-                        <div class="temps_date">2015
-                        </div>
-                        <div class="temps_content">
-                            <h3>CEPE</h3>
-                            <p>Groupe scolaire GHANDHI , Yopougon(ABIDJAN)</p>
-                        </div>
-                    
-                </div>
-
-                <div class="temps_chose">
-                    <div class="temps_point"></div>
-                        <div class="temps_date">2019
-                        </div>
-                        <div class="temps_content">
-                            <h3>BEPC</h3>
-                            <p>Collège Les Phalènes,Yopougon(ABIDJAN)</p>
-                        </div>
-                </div>
-
-                <div class="temps_chose">
-                    <div class="temps_point"></div>
-                        <div class="temps_date">2022
-                        </div>
-                        <div class="temps_content">
-                            <h3>BACCALAUREAT</h3>
-                            <p>Lycée Moderne de Port-Bouët,Port Bouët(ABIDJAN)</p>
-                        </div>
-                    
-                </div>
-
-                <div class="temps_chose">
-                    <div class="temps_point"></div>
-                        <div class="temps_date">2025
-                        </div>
-                        <div class="temps_content">
-                            <h3>Licence 3</h3>
-                            <p>Université Des Technologies D'ABIDJAN,RIVIERA PALMERAIE(ABIDJAN)</p>
-                        </div>
-                    
+                <div class="hero-visual reveal">
+                    <div class="photo-frame">
+                        <img src="img/Calque1.png" alt="Portrait d'Esli Kadio" width="470" height="763">
+                    </div>
+                    <div class="badge badge-1"><i class="bx bx-code-alt"></i> Génie logiciel</div>
+                    <div class="badge badge-2"><i class="bx bx-brain"></i> IA &amp; Data</div>
                 </div>
             </div>
-    </section>
+        </section>
 
-    <!-- section contact -->
-    <section  class="contact" id="contact">
-        <h2 class="heading">Contact <span>ME</span></h2>
-        <form action="">
-            .
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" name="" id="" placeholder="Nom">
-                    <input type="email" name="" id="" placeholder="Email">
-            
+        <!-- À propos -->
+        <section class="section alt" id="about">
+            <div class="container about-grid">
+                <div class="reveal">
+                    <span class="eyebrow">À propos</span>
+                    <h2 class="section-title">Curieuse, créative et rigoureuse</h2>
                 </div>
-                    
-                <div class="input-box">
-                    <input type="number" name="" id="" placeholder="Numero de telephone ">
-                    <input type="text" name="" id="" placeholder="Objet">
+                <div class="reveal">
+                    <p>
+                        Je suis une personne curieuse et créative, à l'aise dans le travail en équipe.
+                        J'ai le sens de la ponctualité et de l'assiduité, et j'aime apprendre
+                        de nouvelles choses, que ce soit en lisant ou en construisant des projets.
+                    </p>
+                    <p>
+                        En dehors des cours, je fais de la pâtisserie : un autre domaine où
+                        la précision et la créativité comptent autant qu'en programmation.
+                    </p>
+                    <ul class="facts">
+                        <li><i class="bx bx-map"></i> Abidjan, Côte d'Ivoire</li>
+                        <li><i class="bx bx-building-house"></i> Université des Technologies d'Abidjan</li>
+                        <li><i class="bx bx-book-open"></i> Licence 3 — Génie logiciel</li>
+                    </ul>
                 </div>
             </div>
-            <div class="input-group-2">
-                <textarea name="" id="" cols="30"
-                rows="10" placeholder="Votre mesage"></textarea>
-                <input type="submit" value="envoyer" class="btn">
+        </section>
+
+        <!-- Compétences -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Compétences</span>
+                    <h2 class="section-title">Ce que je sais faire</h2>
+                </div>
+                <div class="cards three">
+                    <article class="card reveal">
+                        <div class="icon"><i class="bx bx-code-alt"></i></div>
+                        <h3>Développement web</h3>
+                        <p>Conception de sites et d'applications web, du back-end à l'interface.</p>
+                        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Laravel</li></ul>
+                    </article>
+                    <article class="card reveal">
+                        <div class="icon"><i class="bx bx-brain"></i></div>
+                        <h3>IA &amp; données</h3>
+                        <p>Modèles de machine learning, analyse de données et reconnaissance.</p>
+                        <ul class="tags"><li>Python</li><li>Machine learning</li><li>Pandas</li></ul>
+                    </article>
+                    <article class="card reveal">
+                        <div class="icon"><i class="bx bx-bot"></i></div>
+                        <h3>Robotique</h3>
+                        <p>Réalisation de mini-projets et de projets de taille moyenne en robotique.</p>
+                        <ul class="tags"><li>Électronique</li><li>Prototypage</li></ul>
+                    </article>
+                </div>
             </div>
-        </form>
-    </section>
-    
-    <footer>
-        <p class="copyright">
-            &copy;Esli ariel |Tous Droits Reservés
-        </p>
-        
+        </section>
+
+        <!-- Projets -->
+        <section class="section alt" id="projects">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Projets</span>
+                    <h2 class="section-title">Réalisations récentes</h2>
+                    <p class="muted">Une sélection de mes projets, tous disponibles sur GitHub.</p>
+                </div>
+                <div class="cards two">
+                    <article class="card project reveal">
+                        <div class="project-top"><i class="bx bx-wind"></i><span class="pill">Application web</span></div>
+                        <h3>Zéphyr</h3>
+                        <p>Application web avec assistant IA, comptes utilisateurs, globe interactif, modèle de secours et intégration continue.</p>
+                        <ul class="tags"><li>JavaScript</li><li>Python</li><li>IA</li><li>CI</li></ul>
+                        <a class="link" href="https://github.com/esli-ariel/Zephyr" target="_blank" rel="noopener">Voir sur GitHub <i class="bx bx-link-external"></i></a>
+                    </article>
+                    <article class="card project reveal">
+                        <div class="project-top"><i class="bx bx-face"></i><span class="pill">Vision par ordinateur</span></div>
+                        <h3>Reconnaissance faciale</h3>
+                        <p>Système de reconnaissance faciale pour la gestion automatique des présences, avec registre exportable.</p>
+                        <ul class="tags"><li>Python</li><li>InsightFace</li><li>OpenCV</li></ul>
+                        <a class="link" href="https://github.com/esli-ariel/reconnaissance-faciale" target="_blank" rel="noopener">Voir sur GitHub <i class="bx bx-link-external"></i></a>
+                    </article>
+                    <article class="card project reveal">
+                        <div class="project-top"><i class="bx bx-shield-quarter"></i><span class="pill">Data science</span></div>
+                        <h3>Détection de transactions frauduleuses</h3>
+                        <p>Exploration, préparation des données et comparaison de modèles : régression logistique, Random Forest, XGBoost et LightGBM.</p>
+                        <ul class="tags"><li>Python</li><li>XGBoost</li><li>LightGBM</li></ul>
+                        <a class="link" href="https://github.com/esli-ariel/Detection_transactions" target="_blank" rel="noopener">Voir sur GitHub <i class="bx bx-link-external"></i></a>
+                    </article>
+                    <article class="card project reveal">
+                        <div class="project-top"><i class="bx bx-microphone"></i><span class="pill">Projet d'équipe</span></div>
+                        <h3>Assistant IA en langues locales</h3>
+                        <p>Assistant vocal et texte capable de comprendre et répondre en dioula et en baoulé.</p>
+                        <ul class="tags"><li>Python</li><li>NLP</li><li>Jupyter</li></ul>
+                        <a class="link" href="https://github.com/EdithNancy/assistant-ia-langues-locales" target="_blank" rel="noopener">Voir sur GitHub <i class="bx bx-link-external"></i></a>
+                    </article>
+                </div>
+                <p class="more reveal"><a class="link" href="https://github.com/esli-ariel?tab=repositories" target="_blank" rel="noopener">Tous mes dépôts <i class="bx bx-right-arrow-alt"></i></a></p>
+            </div>
+        </section>
+
+        <!-- Formation -->
+        <section class="section" id="education">
+            <div class="container narrow">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Parcours</span>
+                    <h2 class="section-title">Formation</h2>
+                </div>
+                <ol class="timeline">
+                    <li class="reveal">
+                        <span class="year">2025</span>
+                        <h3>Licence 3 — Informatique, génie logiciel</h3>
+                        <p>Université des Technologies d'Abidjan, Riviera Palmeraie</p>
+                    </li>
+                    <li class="reveal">
+                        <span class="year">2022</span>
+                        <h3>Baccalauréat</h3>
+                        <p>Lycée Moderne de Port-Bouët, Abidjan</p>
+                    </li>
+                    <li class="reveal">
+                        <span class="year">2019</span>
+                        <h3>BEPC</h3>
+                        <p>Collège Les Phalènes, Yopougon (Abidjan)</p>
+                    </li>
+                    <li class="reveal">
+                        <span class="year">2015</span>
+                        <h3>CEPE</h3>
+                        <p>Groupe scolaire Ghandhi, Yopougon (Abidjan)</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section alt" id="contact">
+            <div class="container narrow center">
+                <div class="reveal">
+                    <span class="eyebrow">Contact</span>
+                    <h2 class="section-title">Travaillons ensemble</h2>
+                    <p class="muted">Un stage, un projet, une opportunité ? Retrouvez-moi sur LinkedIn ou GitHub, ou téléchargez mon CV.</p>
+                    <div class="hero-actions center-actions">
+                        <a href="https://www.linkedin.com/in/esli-ariel-kadio-2353062b3/" class="btn btn-primary" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/esli-ariel" class="btn btn-outline" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+                        <a href="Copie de Deep Purple Professional College Student CV Resume.pdf" class="btn btn-outline" download><i class="bx bx-download"></i> CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year">2026</span> Esli Kadio. Tous droits réservés.</p>
+        <a href="#home" class="to-top" aria-label="Retour en haut"><i class="bx bx-up-arrow-alt"></i></a>
     </footer>
-   
+
     <script src="script.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script>	ScrollReveal({ duration: 100 })</script>
 </body>
 </html>
